@@ -1,0 +1,48 @@
+%link {
+  text-decoration: none;
+  display: block;
+}
+
+%list {
+  list-style: none;
+}
+
+%main-button {
+  height: 44px;
+
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #d41443;
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color;
+
+  &:hover,
+  &:focus {
+    background-color: #e5e5e5;
+  }
+}
+
+%button {
+  height: 24px;
+  padding-top: 6px;
+  padding-right: 14px;
+  padding-left: 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+
+  @media screen and(min-width:1200px) {
+    height: 40px;
+    padding-top: 10px;
+    padding-right: 23px;
+    padding-left: 23px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}

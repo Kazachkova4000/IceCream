@@ -1,0 +1,429 @@
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  display: block;
+  border: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1050px;
+  }
+}
+
+.logo, .navigation-link, .made-btn, .products-btn {
+  text-decoration: none;
+  display: block;
+}
+
+.navigation-list, .btn-list {
+  list-style: none;
+}
+
+.buy-now-btn, .buy-now-tablet {
+  height: 44px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #d41443;
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: background-color;
+  transition: background-color;
+}
+
+.buy-now-btn:hover, .buy-now-tablet:hover, .buy-now-btn:focus, .buy-now-tablet:focus {
+  background-color: #e5e5e5;
+}
+
+.made-btn, .products-btn {
+  height: 24px;
+  padding-top: 6px;
+  padding-right: 14px;
+  padding-left: 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 1200px) {
+  .made-btn, .products-btn {
+    height: 40px;
+    padding-top: 10px;
+    padding-right: 23px;
+    padding-left: 23px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 6px;
+}
+
+.header.is-fixed {
+  position: fixed;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+}
+
+.navigation-link:hover, .navigation-link:focus {
+  color: #d41443;
+}
+
+.buy-now-btn {
+  width: 209px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .buy-now-btn {
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buy-now-btn {
+    width: 160px;
+  }
+}
+
+.buy-now-tablet {
+  width: 160px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .menu-wrapper {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    padding-top: 60px;
+    padding-bottom: 171px;
+    background-color: #e17992;
+  }
+  .menu-btn {
+    height: 20px;
+    padding: 0;
+    background-color: transparent;
+  }
+  .menu-btn .icon-close {
+    display: none;
+  }
+  .menu-btn .icon-menu {
+    fill: #d41443;
+  }
+  .menu-btn.is-open {
+    margin-right: 28px;
+    z-index: 1;
+  }
+  .menu-btn.is-open .icon-close {
+    display: block;
+  }
+  .menu-btn.is-open .icon-menu {
+    display: none;
+  }
+  .menu-wrapper.is-open {
+    display: block;
+  }
+  .navigation-list-item {
+    height: 42px;
+    padding-top: 11px;
+    padding-left: 21px;
+    border: 1px solid #e18298;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    width: 700px;
+    padding-top: 38px;
+  }
+  .menu-btn {
+    margin-left: 291px;
+  }
+  .menu-btn.is-open {
+    position: absolute;
+    top: 23px;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 38px;
+    padding-right: 35px;
+    width: 100%;
+    max-width: 1120px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation {
+    margin-right: 80px;
+  }
+  .navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffb8ca;
+  height: 502px;
+  background-repeat: no-repeat;
+}
+
+.hero-bcg {
+  background-color: #ffb8ca;
+}
+
+.hero-title {
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-title .hero-title-span {
+  display: block;
+  color: #d41443;
+  font-size: 48px;
+  line-height: 0.96;
+}
+
+.buy-now-tablet {
+  display: none;
+}
+
+.btn-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-list li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.made-btn {
+  color: #d41443;
+  background-color: #ffffff;
+}
+
+.made-btn:hover, .made-btn:focus {
+  background-color: #ecebeb;
+}
+
+.products-btn {
+  color: #ffffff;
+  background-color: #d41443;
+}
+
+.products-btn:hover, .products-btn:focus {
+  background-color: #c7133e;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 320px;
+    padding-top: 194px;
+    background-image: url(../../img/hero/ice-cream-mob.png), url(../../img/hero/ellipse-mob.png);
+    background-position: 117px bottom, right 83px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../img/hero/ice-cream-mob2x.png), url(../../img/hero/ellipse-mob2x.png);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-title {
+    margin-bottom: 19px;
+  }
+  .hero-title br {
+    display: block;
+  }
+  .hero-subtitle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-subtitle {
+    display: block;
+    width: 114px;
+    margin-top: 66px;
+    margin-left: 120px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    height: 399px;
+    width: 768px;
+    padding-top: 102px;
+    background-image: url(../../img/hero/girl-tab.png), url(../../img/hero/ice-cream-tab.png), url(../../img/hero/ellipse-tab.png), url(../../img/hero/mug-of-milk-tab.png), url(../../img/hero/img-16-tab.png), url(../../img/hero/img-23-tab.png);
+    background-position: 566px bottom, 378px bottom, 307px 31px, 34px 245px, 691px 94px, 683px 151px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../img/hero/girl-tab2x.png), url(../../img/hero/ice-cream-tab2x.png), url(../../img/hero/ellipse-tab2x.png), url(../../img/hero/mug-of-milk-tab2x.png), url(../../img/hero/img-16-tab2x.png), url(../../img/hero/img-23-tab2x.png);
+    background-size: 168px, 143px, 324px, 124px, 43px, 51px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .buy-now-tablet {
+    display: block;
+  }
+  .hero-title {
+    font-size: 22px;
+    line-height: 1.14;
+    margin-bottom: 20px;
+  }
+  .hero-title .hero-title-span {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 665px;
+    max-width: 1280px;
+    padding-top: 171px;
+    background-image: url(../../img/hero/girl-des.png), url(../../img/hero/ice-cream-des.png), url(../../img/hero/ellipse-des.png), url(../../img/hero/mug-of-milk-des.png), url(../../img/hero/img-16-des.png), url(../../img/hero/img-23-des.png);
+    background-position: 878px bottom, 594px bottom, 475px 52px, 77px 429px, 1111px 156px, 1091px 248px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../img/hero/girl-des2x.png), url(../../img/hero/ice-cream-des2x.png), url(../../img/hero/ellipse-des2x.png), url(../../img/hero/mug-of-milk-des2x.png), url(../../img/hero/img-16-des2x.png), url(../../img/hero/img-23-des2x.png);
+    background-size: 293px, 236px, 538px, 188px, 72px, 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 38px;
+    line-height: 1.16;
+    margin-bottom: 25px;
+  }
+  .hero-title .hero-title-span {
+    font-size: 58px;
+    line-height: 0.9;
+  }
+  .hero-subtitle {
+    width: 200px;
+    margin-top: 112px;
+    margin-left: 180px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+/*# sourceMappingURL=main.css.map */

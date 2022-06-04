@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header" data-header>
+      <a class="logo" href="./index.html">
+        <img src="./img/header/logo.png" alt="logo" />
+      </a>
+      <button
+        class="menu-btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-wrapper"
+        data-menu-button
+      >
+        <!-- <img src="./img/header/burger.png" alt="menu button" width="20" height="12" /> -->
+        <svg width="20" height="20">
+          <use class="icon-menu" href="./img/symbol-defs.svg#icon-menu"></use>
+          <use class="icon-close" href="./img/symbol-defs.svg#icon-close-ice"></use>
+        </svg>
+        <!-- <img src="./img/hamburger-menu-icon-svg-17.svg" alt="" width="20" height="20" /> -->
+      </button>
+      <button class="buy-now-tablet" type="button">Buy now</button>
+      <div class="menu-wrapper" data-menu>
+        <button class="buy-now-btn" type="button">Buy now</button>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list-item">
+              <a class="navigation-link" href="">Home</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-link" href="">About us</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-link" href="">How it’s made?</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-link" href="">Our products</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-link" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="hero-bcg">
+        <section class="hero">
+          <div class="container">
+            <h1 class="hero-title">
+              ice cream <br />
+              made with <span class="hero-title-span"> passion</span>
+            </h1>
+            <ul class="btn-list">
+              <li>
+                <a href="" class="products-btn">Products</a>
+              </li>
+              <li>
+                <a href="" class="made-btn">How it’s made?</a>
+              </li>
+            </ul>
+            <p class="hero-subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
