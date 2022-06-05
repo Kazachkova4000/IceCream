@@ -15,8 +15,6 @@
 
 .logo {
   @extend %link;
-
-  // max-width: 199px;
 }
 
 .navigation-list {
@@ -35,7 +33,7 @@
 
   &:hover,
   &:focus {
-    color: #d41443;
+    color: $main-text-color;
   }
 }
 
@@ -43,9 +41,7 @@
   @extend %main-button;
 
   width: 209px;
-
   margin-left: auto;
-
   margin-right: auto;
 
   @media screen and (max-width: 1199px) {
@@ -61,11 +57,6 @@
 
   width: 160px;
 }
-// @media screen and(max-width:319px) {
-//   .header {
-//     max-width: 280px;
-//   }
-// }
 
 @media screen and (max-width: 767px) {
   .header {
@@ -95,11 +86,10 @@
     }
 
     .icon-menu {
-      fill: #d41443;
+      fill: $main-text-color;
     }
 
     &.is-open {
-      // margin-top: 17px;
       margin-right: 28px;
       z-index: 1;
 
@@ -145,12 +135,9 @@
 @media screen and(min-width:1200px) {
   .header {
     padding-top: 38px;
-    // padding-left: 46px;
     padding-right: 35px;
     width: 100%;
     max-width: 1120px;
-    // margin-left: auto;
-    // margin-right: auto;
   }
 
   .menu-btn {
@@ -164,7 +151,7 @@
   }
 
   .navigation {
-    margin-right: 80px;
+    margin-right: 110px;
   }
 
   .navigation-list {
@@ -175,11 +162,3 @@
     margin-right: 35px;
   }
 }
-
-// @media screen and(min-width:1280px) {
-//   .header {
-//     top: 0;
-//     left: 50%;
-//     transform: translateX(-50%);
-//   }
-// }

@@ -23,7 +23,11 @@
   <body>
     <header class="header" data-header>
       <a class="logo" href="./index.html">
-        <img src="./img/header/logo.png" alt="logo" />
+        <img
+          srcset="./img/header/logo.png 1x, ./img/header/logo2x.png 2x"
+          src="./img/header/logo.png"
+          alt="logo"
+        />
       </a>
       <button
         class="menu-btn"
@@ -32,15 +36,13 @@
         aria-controls="menu-wrapper"
         data-menu-button
       >
-        <!-- <img src="./img/header/burger.png" alt="menu button" width="20" height="12" /> -->
         <svg width="20" height="20">
-          <use class="icon-menu" href="./img/symbol-defs.svg#icon-menu"></use>
-          <use class="icon-close" href="./img/symbol-defs.svg#icon-close-ice"></use>
+          <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
+          <use class="icon-close" href="./img/sprite.svg#icon-close"></use>
         </svg>
-        <!-- <img src="./img/hamburger-menu-icon-svg-17.svg" alt="" width="20" height="20" /> -->
       </button>
       <button class="buy-now-tablet" type="button">Buy now</button>
-      <div class="menu-wrapper" data-menu>
+      <div class="menu-wrapper" id="menu-wrapper" data-menu>
         <button class="buy-now-btn" type="button">Buy now</button>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -86,6 +88,60 @@
           </div>
         </section>
       </div>
+      <section class="products container">
+        <p class="products-subtitle">100% natural</p>
+        <h2 class="products-title">products</h2>
+        <ul class="products-list">
+          <li class="products-item">
+            <div class="products-img ice-cream"></div>
+            <div class="products-text-wrapper ice-cream">
+              <h3 class="products-item-title">ice cream</h3>
+              <svg width="26" height="6">
+                <use href="./img/sprite.svg#dots"></use>
+              </svg>
+              <p class="products-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et. dolore magna aliqua facilisis.
+              </p>
+              <a class="product-link" href="#" onclick="return false;">
+                <img src="./img/products/arrow-right.png" alt="product link" />
+              </a>
+            </div>
+          </li>
+          <li class="products-item">
+            <div class="products-img ice-coffee"></div>
+            <div class="products-text-wrapper ice-coffee">
+              <h3 class="products-item-title">ice coffee</h3>
+              <svg width="26" height="6">
+                <use href="./img/sprite.svg#dots"></use>
+              </svg>
+              <p class="products-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et. dolore magna aliqua facilisis.
+              </p>
+              <a class="product-link" href="#" onclick="return false;">
+                <img src="./img/products/arrow-right.png" alt="product link" />
+              </a>
+            </div>
+          </li>
+          <li class="products-item">
+            <div class="products-img milkshake"></div>
+            <div class="products-text-wrapper milkshake">
+              <h3 class="products-item-title">milkshakes</h3>
+              <svg width="26" height="6">
+                <use href="./img/sprite.svg#dots"></use>
+              </svg>
+              <p class="products-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et. dolore magna aliqua facilisis.
+              </p>
+              <a class="product-link" href="#" onclick="return false;">
+                <img src="./img/products/arrow-right.png" alt="product link" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer></footer>
     <script src="./js/menu.js"></script>

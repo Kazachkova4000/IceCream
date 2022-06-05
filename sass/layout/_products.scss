@@ -1,0 +1,308 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  text-align: center;
+}
+
+.products-subtitle {
+  margin-bottom: 15px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.products-title {
+  margin-bottom: 31px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+
+.products-list {
+  @extend %list;
+}
+
+.products-item {
+  position: relative;
+}
+
+.products-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products-text-wrapper {
+  height: 485px;
+  padding-top: 161px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 24px;
+
+  &.ice-cream {
+    background-color: #ffb8ca;
+  }
+
+  &.ice-coffee {
+    background-color: #f0d1a5;
+  }
+
+  &.milkshake {
+    background-color: #c2e297;
+  }
+}
+
+.products-item-title {
+  margin-bottom: 25px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.products-item-text {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.product-link {
+  @extend %link;
+
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and(max-width:767px) {
+  .products-item {
+    width: 280px;
+    height: 598px;
+    padding-top: 113px;
+    background-size: 249px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+
+  .products-img {
+    width: 249px;
+    height: 252px;
+    background-size: 249px;
+
+    &.ice-cream {
+      background-image: url(../img/products/ice-cream-mob.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/products/ice-cream-mob2x.png);
+      }
+    }
+
+    &.ice-coffee {
+      background-image: url(../img/products/ice-coffee-mob.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/products/ice-coffee-mob2x.png);
+      }
+    }
+
+    &.milkshake {
+      background-image: url(../img/products/milkshakes-mob.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/products/milkshakes-mob2x.png);
+      }
+    }
+  }
+}
+
+@media screen and(min-width:768px) {
+  .products {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+
+  .products-subtitle {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  .products-title {
+    margin-bottom: 39px;
+    font-size: 48px;
+  }
+
+  .products-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .products-item {
+    width: 220px;
+    height: 596px;
+    padding-top: 111px;
+  }
+
+  .products-img {
+    width: 220px;
+    height: 224px;
+    background-size: 220px;
+
+    &.ice-cream {
+      background-image: url(../img/products/ice-cream-tab.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/products/ice-cream-tab2x.png);
+      }
+    }
+
+    &.ice-coffee {
+      background-image: url(../img/products/ice-coffee-tab.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/products/ice-coffee-tab2x.png);
+      }
+    }
+
+    &.milkshake {
+      background-image: url(../img/products/milkshakes-tab.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/products/milkshakes-tab2x.png);
+      }
+    }
+  }
+
+  .products-text-wrapper {
+    padding-top: 152px;
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+
+  .products-item-text {
+    height: 124px;
+    margin-bottom: 40px;
+    line-height: 1.76;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .products {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+
+  .products-subtitle {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+  .products-title {
+    margin-bottom: 49px;
+    font-size: 58px;
+    line-height: 1.14;
+  }
+
+  .products-item {
+    width: 335px;
+    height: 736px;
+    padding-top: 210px;
+  }
+
+  .products-img {
+    width: 335px;
+    height: 335px;
+    background-size: 335px;
+
+    &.ice-cream {
+      background-image: url(../img/products/ice-cream-des.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/products/ice-cream-des2x.png);
+      }
+    }
+
+    &.ice-coffee {
+      background-image: url(../img/products/ice-coffee-des.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/products/ice-coffee-des2x.png);
+      }
+    }
+
+    &.milkshake {
+      background-image: url(../img/products/milkshakes-des.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/products/milkshakes-des2x.png);
+      }
+    }
+  }
+
+  .products-text-wrapper {
+    height: 525px;
+    padding-top: 163px;
+    padding-right: 44px;
+    padding-left: 44px;
+  }
+
+  .products-item-title {
+    margin-bottom: 28px;
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+  .products-item-text {
+    margin-top: 28px;
+    height: 106px;
+    margin-bottom: 60px;
+    font-size: 16px;
+  }
+}

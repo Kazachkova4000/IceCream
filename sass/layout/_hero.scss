@@ -1,7 +1,6 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffb8ca;
   height: 502px;
   background-repeat: no-repeat;
 }
@@ -21,8 +20,7 @@
 
   .hero-title-span {
     display: block;
-    // max-width: 100%;
-    color: #d41443;
+    color: $main-text-color;
     font-size: 48px;
     line-height: 0.96;
   }
@@ -48,6 +46,7 @@
 
   color: $main-text-color;
   background-color: $white-text-color;
+  transition: background-color 250ms linear;
 
   &:hover,
   &:focus {
@@ -61,6 +60,7 @@
 
   color: $white-text-color;
   background-color: $main-text-color;
+  transition: background-color 250ms linear;
 
   &:hover,
   &:focus {
@@ -72,7 +72,7 @@
   .hero {
     max-width: 320px;
     padding-top: 194px;
-    background-image: url(../../img/hero/ice-cream-mob.png), url(../../img/hero/ellipse-mob.png);
+    background-image: url(../img/hero/ice-cream-mob.png), url(../img/hero/ellipse-mob.png);
     background-position: 117px bottom, right 83px;
   }
 
@@ -81,8 +81,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../../img/hero/ice-cream-mob2x.png),
-        url(../../img/hero/ellipse-mob2x.png);
+      background-image: url(../img/hero/ice-cream-mob2x.png), url(../img/hero/ellipse-mob2x.png);
     }
   }
 
@@ -117,11 +116,10 @@
     height: 399px;
     width: 768px;
     padding-top: 102px;
-    // padding-bottom: 59px;
 
-    background-image: url(../../img/hero/girl-tab.png), url(../../img/hero/ice-cream-tab.png),
-      url(../../img/hero/ellipse-tab.png), url(../../img/hero/mug-of-milk-tab.png),
-      url(../../img/hero/img-16-tab.png), url(../../img/hero/img-23-tab.png);
+    background-image: url(../img/hero/girl-tab.png), url(../img/hero/ice-cream-tab.png),
+      url(../img/hero/ellipse-tab.png), url(../img/hero/mug-of-milk-tab.png),
+      url(../img/hero/img-16-tab.png), url(../img/hero/img-23-tab.png);
 
     background-position: 566px bottom, 378px bottom, 307px 31px, 34px 245px, 691px 94px, 683px 151px;
   }
@@ -131,9 +129,9 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../../img/hero/girl-tab2x.png), url(../../img/hero/ice-cream-tab2x.png),
-        url(../../img/hero/ellipse-tab2x.png), url(../../img/hero/mug-of-milk-tab2x.png),
-        url(../../img/hero/img-16-tab2x.png), url(../../img/hero/img-23-tab2x.png);
+      background-image: url(../img/hero/girl-tab2x.png), url(../img/hero/ice-cream-tab2x.png),
+        url(../img/hero/ellipse-tab2x.png), url(../img/hero/mug-of-milk-tab2x.png),
+        url(../img/hero/img-16-tab2x.png), url(../img/hero/img-23-tab2x.png);
       background-size: 168px, 143px, 324px, 124px, 43px, 51px;
     }
   }
@@ -160,9 +158,9 @@
     max-width: 1280px;
     padding-top: 171px;
 
-    background-image: url(../../img/hero/girl-des.png), url(../../img/hero/ice-cream-des.png),
-      url(../../img/hero/ellipse-des.png), url(../../img/hero/mug-of-milk-des.png),
-      url(../../img/hero/img-16-des.png), url(../../img/hero/img-23-des.png);
+    background-image: url(../img/hero/girl-des.png), url(../img/hero/ice-cream-des.png),
+      url(../img/hero/ellipse-des.png), url(../img/hero/mug-of-milk-des.png),
+      url(../img/hero/img-16-des.png), url(../img/hero/img-23-des.png);
 
     background-position: 878px bottom, 594px bottom, 475px 52px, 77px 429px, 1111px 156px,
       1091px 248px;
@@ -173,9 +171,9 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../../img/hero/girl-des2x.png), url(../../img/hero/ice-cream-des2x.png),
-        url(../../img/hero/ellipse-des2x.png), url(../../img/hero/mug-of-milk-des2x.png),
-        url(../../img/hero/img-16-des2x.png), url(../../img/hero/img-23-des2x.png);
+      background-image: url(../img/hero/girl-des2x.png), url(../img/hero/ice-cream-des2x.png),
+        url(../img/hero/ellipse-des2x.png), url(../img/hero/mug-of-milk-des2x.png),
+        url(../img/hero/img-16-des2x.png), url(../img/hero/img-23-des2x.png);
       background-size: 293px, 236px, 538px, 188px, 72px, 92px;
     }
   }
