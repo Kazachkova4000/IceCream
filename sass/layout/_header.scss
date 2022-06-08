@@ -7,10 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 6px;
-
-  &.is-fixed {
-    position: fixed;
-  }
+  z-index: 1;
 }
 
 .logo {
@@ -54,13 +51,19 @@
 
 .buy-now-tablet {
   @extend %main-button;
-
-  width: 160px;
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
   .header {
     width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) and(max-width:1199px) {
+  .buy-now-tablet {
+    display: flex;
+    width: 160px;
   }
 }
 
@@ -71,9 +74,13 @@
     top: 0;
     right: 0;
     width: 250px;
+    height: 502px;
     padding-top: 60px;
-    padding-bottom: 171px;
+    // padding-bottom: 171px;
     background-color: #e17992;
+    // background-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    // box-shadow: ;
+    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
   }
 
   .menu-btn {
@@ -119,6 +126,10 @@
   .header {
     width: 700px;
     padding-top: 38px;
+  }
+
+  .menu-wrapper {
+    height: 1020px;
   }
 
   .menu-btn {

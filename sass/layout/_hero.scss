@@ -26,10 +26,6 @@
   }
 }
 
-.buy-now-tablet {
-  display: none;
-}
-
 .btn-list {
   @extend %list;
 
@@ -134,10 +130,6 @@
         url(../img/hero/img-16-tab2x.png), url(../img/hero/img-23-tab2x.png);
       background-size: 168px, 143px, 324px, 124px, 43px, 51px;
     }
-  }
-
-  .buy-now-tablet {
-    display: block;
   }
 
   .hero-title {

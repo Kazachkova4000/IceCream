@@ -2,6 +2,10 @@ body {
   font-family: $main-font;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,

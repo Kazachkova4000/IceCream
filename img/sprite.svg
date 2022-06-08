@@ -5,6 +5,11 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M138.667 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
+<symbol id="red-dots" viewBox="0 0 256 32">
+<path fill="#c7133e" style="fill: var(--color2, #c7133e)" d="M144 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#c7133e" style="fill: var(--color2, #c7133e)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#c7133e" style="fill: var(--color2, #c7133e)" d="M256 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+</symbol>
 <symbol id="icon-menu" viewBox="0 0 48 32">
 <path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
 </symbol>

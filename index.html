@@ -20,8 +20,8 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
-    <header class="header" data-header>
+  <body data-body>
+    <header class="header">
       <a class="logo" href="./index.html">
         <img
           srcset="./img/header/logo.png 1x, ./img/header/logo2x.png 2x"
@@ -41,9 +41,9 @@
           <use class="icon-close" href="./img/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      <button class="buy-now-tablet" type="button">Buy now</button>
+      <button class="buy-now-tablet" type="button"><span>Buy now</span></button>
       <div class="menu-wrapper" id="menu-wrapper" data-menu>
-        <button class="buy-now-btn" type="button">Buy now</button>
+        <button class="buy-now-btn" type="button"><span>Buy now</span></button>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-list-item">
@@ -89,58 +89,215 @@
         </section>
       </div>
       <section class="products container">
-        <p class="products-subtitle">100% natural</p>
-        <h2 class="products-title">products</h2>
+        <p class="subtitle">100% natural</p>
+        <h2 class="title">products</h2>
         <ul class="products-list">
-          <li class="products-item">
-            <div class="products-img ice-cream"></div>
-            <div class="products-text-wrapper ice-cream">
-              <h3 class="products-item-title">ice cream</h3>
-              <svg width="26" height="6">
-                <use href="./img/sprite.svg#dots"></use>
-              </svg>
-              <p class="products-item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <a class="product-link" href="#" onclick="return false;">
-                <img src="./img/products/arrow-right.png" alt="product link" />
-              </a>
-            </div>
+          <li class="products-item ice-cream">
+            <picture>
+              <source
+                srcset="./img/products/ice-cream-mob.png 1x, ./img/products/ice-cream-mob2x.png 2x"
+                media="(max-width:767px)"
+              />
+              <source
+                srcset="./img/products/ice-cream-des.png 1x, ./img/products/ice-cream-des2x.png 2x"
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="./img/products/ice-cream-tab.png 1x, ./img/products/ice-cream-tab2x.png 2x"
+                media="(min-width:768px)"
+              />
+              <img
+                class="product-img"
+                src="./img/products/ice-cream-tab.png"
+                alt="image of a ice cream"
+              />
+            </picture>
+
+            <h3 class="products-item-title">ice cream</h3>
+            <svg width="26" height="6">
+              <use href="./img/sprite.svg#dots"></use>
+            </svg>
+            <p class="products-item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <a class="product-link" href="#" onclick="return false;">
+              <img src="./img/products/arrow-right.png" alt="product link" />
+            </a>
           </li>
-          <li class="products-item">
-            <div class="products-img ice-coffee"></div>
-            <div class="products-text-wrapper ice-coffee">
-              <h3 class="products-item-title">ice coffee</h3>
-              <svg width="26" height="6">
-                <use href="./img/sprite.svg#dots"></use>
-              </svg>
-              <p class="products-item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <a class="product-link" href="#" onclick="return false;">
-                <img src="./img/products/arrow-right.png" alt="product link" />
-              </a>
-            </div>
+          <li class="products-item ice-coffee">
+            <picture>
+              <source
+                srcset="
+                  ./img/products/ice-coffee-mob.png   1x,
+                  ./img/products/ice-coffee-mob2x.png 2x
+                "
+                media="(max-width:767px)"
+              />
+              <source
+                srcset="
+                  ./img/products/ice-coffee-des.png   1x,
+                  ./img/products/ice-coffee-des2x.png 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./img/products/ice-coffee-tab.png   1x,
+                  ./img/products/ice-coffee-tab2x.png 2x
+                "
+                media="(min-width:768px)"
+              />
+              <img
+                class="product-img"
+                src="./img/products/ice-coffee-tab.png"
+                alt="image of a milkshake"
+              />
+            </picture>
+
+            <h3 class="products-item-title">ice coffee</h3>
+            <svg width="26" height="6">
+              <use href="./img/sprite.svg#dots"></use>
+            </svg>
+            <p class="products-item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <a class="product-link" href="#" onclick="return false;">
+              <img src="./img/products/arrow-right.png" alt="product link" />
+            </a>
           </li>
-          <li class="products-item">
-            <div class="products-img milkshake"></div>
-            <div class="products-text-wrapper milkshake">
-              <h3 class="products-item-title">milkshakes</h3>
-              <svg width="26" height="6">
-                <use href="./img/sprite.svg#dots"></use>
-              </svg>
-              <p class="products-item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <a class="product-link" href="#" onclick="return false;">
-                <img src="./img/products/arrow-right.png" alt="product link" />
-              </a>
-            </div>
+          <li class="products-item milkshake">
+            <picture>
+              <source
+                srcset="
+                  ./img/products/milkshakes-mob.png   1x,
+                  ./img/products/milkshakes-mob2x.png 2x
+                "
+                media="(max-width:767px)"
+              />
+              <source
+                srcset="
+                  ./img/products/milkshakes-des.png   1x,
+                  ./img/products/milkshakes-des2x.png 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./img/products/milkshakes-tab.png   1x,
+                  ./img/products/milkshakes-tab2x.png 2x
+                "
+                media="(min-width:768px)"
+              />
+              <img
+                class="product-img"
+                src="./img/products/milkshakes-tab.png"
+                alt="image of a milkshake"
+              />
+            </picture>
+
+            <h3 class="products-item-title">milkshakes</h3>
+            <svg width="26" height="6">
+              <use href="./img/sprite.svg#dots"></use>
+            </svg>
+            <p class="products-item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <a class="product-link" href="#" onclick="return false;">
+              <img src="./img/products/arrow-right.png" alt="product link" />
+            </a>
           </li>
         </ul>
+      </section>
+      <section class="made-section">
+        <div class="made-section-wrapper">
+          <p class="subtitle">tradition and love</p>
+          <h2 class="title">
+            how it’s <br />
+            made?
+          </h2>
+          <p class="made-text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </p>
+          <p class="made-desc">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+            urna maximus. Cras massa nibh, tincidunt. <br />
+            <br />Aliquam erat volutpat. Aenean accumsan.
+          </p>
+          <a class="read-more-btn" href="#" onclick="return false;">Read more</a>
+          <ul class="made-characteristic-list container">
+            <li class="made-characteristic-item">
+              <img
+                srcset="./img/made/icon-milk.png 1x, ./img/made/icon-milk2x.png 2x"
+                src="./img/made/icon-milk.png"
+                alt="icon milk"
+              />
+              <p class="made-characteristic-number">721</p>
+              <p class="made-characteristic-desc">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="made-characteristic-item">
+              <img
+                srcset="./img/made/icon-apple.png 1x, ./img/made/icon-apple2x.png 2x"
+                src="./img/made/icon-apple.png"
+                alt="icon milk"
+              />
+              <p class="made-characteristic-number">16kg</p>
+              <p class="made-characteristic-desc">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="made-characteristic-item">
+              <img
+                srcset="./img/made/icon-heart.png 1x, ./img/made/icon-heart2x.png 2x"
+                src="./img/made/icon-heart.png"
+                alt="icon milk"
+              />
+              <p class="made-characteristic-number">84</p>
+              <p class="made-characteristic-desc">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <picture>
+        <source
+          srcset="./img/made/slider-mob.png 1x, ./img/made/slider-mob2x.png 2x"
+          media="(max-width:767px)"
+        />
+        <source
+          srcset="./img/made/slider-des.png 1x, ./img/made/slider-des2x.png 2x"
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="./img/made/slider-tab.png 1x, ./img/made/slider-tab2x.png 2x"
+          media="(min-width:768px)"
+        />
+        <img class="slider" src="./img/made/slider-tab.png" alt="photo of ice cream" />
+      </picture>
+
+      <section class="reviews container">
+        <img
+          class="user-img"
+          srcset="./img/reviews/user.jpg 1x, ./img/reviews/user2x.jpg 2x"
+          src="./img/reviews/user.jpg"
+          alt="image of the user"
+        />
+
+        <p class="reviews-desc">
+          Nullam viverra consectetuer. Quisquecursus et, porttitor risus. Aliquam sem. In hendrerit
+          nulla quam nunc,accumsan congue. Lorem ipsum primis in nibh vel risus.
+        </p>
+        <svg width="32" height="4">
+          <use href="./img/sprite.svg#red-dots"></use>
+        </svg>
+        <p class="reviews-author">Emily, Los Angeles</p>
       </section>
     </main>
     <footer></footer>

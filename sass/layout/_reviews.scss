@@ -1,0 +1,98 @@
+.reviews {
+  @extend %section;
+
+  text-align: center;
+}
+
+.user-img {
+  margin-right: auto;
+  margin-bottom: 29px;
+  margin-left: auto;
+}
+
+.reviews-desc {
+  margin-bottom: 30px;
+  color: $black-text-color;
+  background-color: #fafafa;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  letter-spacing: 0.04em;
+  background-repeat: no-repeat;
+}
+
+.reviews-author {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-desc {
+    padding-top: 43px;
+    padding-right: 66px;
+    padding-bottom: 26px;
+    padding-left: 57px;
+    background-image: url(../img/reviews/quotes.png), url(../img/reviews/underline-mob.png),
+      url(../img/reviews/underline-mob.png), url(../img/reviews/underline-mob.png),
+      url(../img/reviews/underline-mob.png), url(../img/reviews/underline-mob.png),
+      url(../img/reviews/underline-mob.png), url(../img/reviews/underline-mob.png),
+      url(../img/reviews/underline-mob.png);
+
+    background-position: 61px 28px, 50px 71px, 50px 102px, 50px 133px, 50px 164px, 50px 195px,
+      50px 226px, 50px 257px, 50px 288px;
+  }
+
+  .reviews-author {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.86;
+    color: $black-text-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .user-img {
+    margin-bottom: 19px;
+  }
+  .reviews-desc {
+    width: 620px;
+    margin-right: auto;
+    margin-bottom: 24px;
+    margin-left: auto;
+    padding-top: 47px;
+    padding-left: 80px;
+    padding-bottom: 34px;
+    padding-right: 80px;
+    font-size: 14px;
+    line-height: 2.14;
+    background-image: url(../img/reviews/quotes.png), url(../img/reviews/underline-tab.png),
+      url(../img/reviews/underline-tab.png), url(../img/reviews/underline-tab.png);
+    background-position: 40px 30px, 60px 76px, 60px 106px, 60px 136px;
+  }
+
+  .reviews-author {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews-desc {
+    width: 926px;
+    margin-bottom: 15px;
+    padding-top: 47px;
+    padding-left: 87px;
+    padding-bottom: 39px;
+    padding-right: 89px;
+    background-image: url(../img/reviews/quotes.png), url(../img/reviews/underline-des.png),
+      url(../img/reviews/underline-des.png);
+    background-position: 50px 32px, 59px 75.5px, 59px 106px;
+  }
+
+  .reviews-author {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.85;
+  }
+}

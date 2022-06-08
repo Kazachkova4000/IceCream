@@ -1,0 +1,215 @@
+.made-section {
+  @extend %section;
+
+  background-color: $section-bcg-color;
+  background-repeat: no-repeat;
+}
+
+.made-text {
+  @extend %made-text-style;
+
+  margin-bottom: 30px;
+  color: $black-text-color;
+}
+
+.made-desc {
+  @extend %made-text-style;
+
+  color: $gray-text-color;
+}
+
+.read-more-btn {
+  @extend %link;
+  @extend %main-button;
+
+  width: 176px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.made-characteristic-list {
+  @extend %list;
+}
+
+.made-characteristic-number {
+  margin-top: 16px;
+  margin-bottom: 19px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+
+.made-characteristic-desc {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+  color: $black-text-color;
+  letter-spacing: 0.02em;
+}
+
+@media screen and(max-width:767px) {
+  .made-section {
+    background-image: url(../img/made/cow-mob.png), url(../img/made/milk-mob.png);
+    background-position: center 263px, center 766px;
+    background-size: 280px, 100%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/made/cow-mob2x.png), url(../img/made/milk-mob2x.png);
+    }
+  }
+
+  .made-text {
+    margin-top: 350px;
+  }
+
+  .made-desc {
+    margin-bottom: 17px;
+  }
+
+  .read-more-btn {
+    margin-bottom: 39px;
+  }
+
+  .made-characteristic-item:not(:last-child) {
+    margin-bottom: 38px;
+  }
+
+  .made-characteristic-desc {
+    max-width: 230px;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .made-section {
+    padding-bottom: 140px;
+
+    .title br {
+      display: none;
+    }
+  }
+
+  .made-section-wrapper {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/made/cow-tab.png);
+    background-repeat: no-repeat;
+    background-position: left 159px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/made/cow-tab2x.png);
+      background-size: 340px;
+    }
+  }
+
+  .made-text {
+    margin-top: 100px;
+  }
+
+  .made-desc {
+    margin-bottom: 62px;
+  }
+
+  .read-more-btn {
+    margin-bottom: 66px;
+  }
+
+  .made-characteristic-list {
+    display: flex;
+  }
+
+  .made-characteristic-item {
+    width: 180px;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  .made-characteristic-number {
+    font-size: 48px;
+  }
+
+  .made-characteristic-desc {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .made-section {
+    background-image: url(../img/made/milk-des.png);
+    background-position: center 342px;
+    background-size: 1282px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/made/milk-des2x.png);
+      background-size: 100%;
+    }
+  }
+
+  .made-section-wrapper {
+    width: 1050px;
+    background-image: url(../img/made/cow-des.png);
+    background-position: left 168px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/made/cow-des2x.png);
+      background-size: 516px;
+    }
+  }
+
+  .made-text {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .made-desc {
+    margin-bottom: 45px;
+    line-height: 1.93;
+  }
+
+  .read-more-btn {
+    margin-left: 627px;
+    margin-bottom: 146px;
+  }
+
+  .made-characteristic-item {
+    width: 330px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .made-characteristic-number {
+    font-size: 58px;
+  }
+
+  .made-characteristic-desc {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+.slider {
+  width: 100%;
+}
