@@ -1,0 +1,246 @@
+.contacts {
+  position: relative;
+  padding-top: 1291px;
+  background-color: $section-bcg-color;
+}
+
+.contacts-list {
+  @extend %list;
+
+  position: absolute;
+  top: -84px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contacts-item {
+  padding-top: 43px;
+  padding-right: 21px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: $white-text-color;
+}
+
+.contacts-list-cafe {
+  @extend %contacts-title;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 4px;
+  background-color: #f0d1a5;
+}
+
+.contacts-list-foodtruck {
+  @extend %contacts-title;
+
+  padding-left: 27px;
+  padding-right: 27px;
+  border-radius: 4px;
+  background-color: #c2e297;
+}
+
+.contacts-city {
+  @extend %contacts-text-style;
+
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: $black-text-color;
+}
+
+.contacts-desc {
+  @extend %contacts-text-style;
+
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: $gray-text-color;
+}
+
+.work-schedule {
+  @extend %list;
+
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.work-schedule-item {
+  @extend %contacts-text-style;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.work-time {
+  @extend %contacts-text-style;
+
+  display: block;
+  color: #ffa5ba;
+}
+
+.contacts-details {
+  @extend %link;
+  @extend %contacts-text-style;
+
+  line-height: 1.5;
+  color: $gray-text-color;
+}
+
+.contacts-btn {
+  @extend %list;
+}
+
+.our-locations-btn,
+.franchise-btn {
+  @extend %link;
+  @extend %main-button;
+
+  width: 161px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-locations-btn {
+  color: $white-text-color;
+  background-color: #d41342;
+
+  &::after {
+    background-image: url(../img/white-arrow.png);
+    height: 10px;
+  }
+
+  &:hover {
+    background-color: #c7133e;
+    opacity: 0.7;
+  }
+}
+
+// .franchise-btn {
+// }
+
+@media screen and(max-width:767px) {
+  .contacts-item {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .contacts-btn li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 547px;
+  }
+
+  .contacts-list {
+    width: 700px;
+    top: -84px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts-item {
+    width: 220px;
+    padding-top: 50px;
+    padding-right: 32px;
+    padding-bottom: 50px;
+    padding-left: 31px;
+  }
+
+  .contacts-list-cafe {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contacts-list-foodtruck {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .contacts-city {
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+
+  .contacts-desc {
+    margin-bottom: 30px;
+    line-height: 1.64;
+  }
+
+  .work-schedule {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .work-schedule-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .contacts-details {
+    line-height: 1.83;
+  }
+
+  .contacts-btn {
+    display: flex;
+    justify-content: center;
+
+    li:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .contacts {
+    padding-top: 556px;
+  }
+
+  .contacts-item {
+    width: 330px;
+    padding-top: 54px;
+    padding-right: 40px;
+    padding-bottom: 62px;
+    padding-left: 44px;
+  }
+
+  .contacts-list {
+    width: 1050px;
+    top: -102px;
+  }
+
+  .contacts-city {
+    margin-top: 32px;
+    margin-bottom: 10px;
+  }
+
+  .contacts-desc {
+    margin-bottom: 32px;
+    line-height: 1.81;
+  }
+
+  .work-schedule {
+    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .work-schedule-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .contacts-details {
+    line-height: 1.81;
+  }
+}

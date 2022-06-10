@@ -56,12 +56,13 @@ button {
   }
 }
 
-.logo, .navigation-link, .made-btn, .products-btn, .product-link, .read-more-btn {
+.logo, .navigation-link, .made-btn, .products-btn, .product-link, .read-more-btn, .reviews a, .contacts-details, .our-locations-btn,
+.franchise-btn {
   text-decoration: none;
   display: block;
 }
 
-.navigation-list, .btn-list, .products-list, .made-characteristic-list {
+.navigation-list, .btn-list, .products-list, .made-characteristic-list, .reviews-author-list, .contacts-list, .work-schedule, .contacts-btn {
   list-style: none;
 }
 
@@ -84,7 +85,8 @@ button {
   }
 }
 
-.buy-now-btn, .buy-now-tablet, .read-more-btn {
+.buy-now-btn, .buy-now-tablet, .read-more-btn, .our-locations-btn,
+.franchise-btn {
   height: 44px;
   padding-top: 12px;
   padding-right: 0;
@@ -111,15 +113,18 @@ button {
           justify-content: center;
 }
 
-.buy-now-btn:hover, .buy-now-tablet:hover, .read-more-btn:hover, .buy-now-btn:focus, .buy-now-tablet:focus, .read-more-btn:focus {
+.buy-now-btn:hover, .buy-now-tablet:hover, .read-more-btn:hover, .our-locations-btn:hover,
+.franchise-btn:hover, .buy-now-btn:focus, .buy-now-tablet:focus, .read-more-btn:focus, .our-locations-btn:focus,
+.franchise-btn:focus {
   background-color: #ecebeb;
 }
 
-.buy-now-btn::after, .buy-now-tablet::after, .read-more-btn::after {
+.buy-now-btn::after, .buy-now-tablet::after, .read-more-btn::after, .our-locations-btn::after,
+.franchise-btn::after {
   content: '';
   display: block;
   width: 6px;
-  height: 8px;
+  height: 9px;
   margin-left: 12px;
   background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
@@ -135,6 +140,10 @@ button {
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+}
+
+.made-btn:hover, .products-btn:hover, .made-btn:focus, .products-btn:focus {
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 1200px) {
@@ -175,6 +184,42 @@ button {
   .made-text, .made-desc {
     margin-left: 587px;
     width: 463px;
+  }
+}
+
+.contacts-list-cafe, .contacts-list-foodtruck {
+  display: inline;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list-cafe, .contacts-list-foodtruck {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.contacts-city, .contacts-desc, .work-schedule-item, .work-time, .contacts-details {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-city, .contacts-desc, .work-schedule-item, .work-time, .contacts-details {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-city, .contacts-desc, .work-schedule-item, .work-time, .contacts-details {
+    font-size: 16px;
+    line-height: 1.88;
   }
 }
 
@@ -868,6 +913,7 @@ button {
 }
 
 .reviews {
+  padding-bottom: 170px;
   text-align: center;
 }
 
@@ -889,11 +935,54 @@ button {
 }
 
 .reviews-author {
+  margin-bottom: 30px;
   font-weight: 500;
   letter-spacing: 0.04em;
 }
 
+.reviews-author-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews-author-list li:not(:last-child) {
+  margin-right: 18px;
+}
+
+.reviews-author-link,
+.reviews-author-link {
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+
+.reviews-author-link svg,
+.reviews-author-link svg {
+  fill: #d9d9d9;
+}
+
+.reviews-author-link:hover, .reviews-author-link:focus,
+.reviews-author-link:hover,
+.reviews-author-link:focus {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.reviews-author-link:hover svg, .reviews-author-link:focus svg,
+.reviews-author-link:hover svg,
+.reviews-author-link:focus svg {
+  fill: #d31342;
+}
+
 @media screen and (max-width: 767px) {
+  .reviews {
+    padding-bottom: 197px;
+  }
   .reviews-desc {
     padding-top: 43px;
     padding-right: 66px;
@@ -904,6 +993,7 @@ button {
   }
   .reviews-author {
     margin-top: 18px;
+    margin-bottom: 35px;
     font-size: 14px;
     line-height: 1.86;
     color: #000000;
@@ -911,6 +1001,9 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .reviews {
+    padding-bottom: 234px;
+  }
   .user-img {
     margin-bottom: 19px;
   }
@@ -950,6 +1043,212 @@ button {
     margin-top: 15px;
     font-size: 20px;
     line-height: 1.85;
+  }
+}
+
+.contacts {
+  position: relative;
+  padding-top: 1291px;
+  background-color: #fff5f6;
+}
+
+.contacts-list {
+  position: absolute;
+  top: -84px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contacts-item {
+  padding-top: 43px;
+  padding-right: 21px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: #ffffff;
+}
+
+.contacts-list-cafe {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 4px;
+  background-color: #f0d1a5;
+}
+
+.contacts-list-foodtruck {
+  padding-left: 27px;
+  padding-right: 27px;
+  border-radius: 4px;
+  background-color: #c2e297;
+}
+
+.contacts-city {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.contacts-desc {
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.work-schedule {
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.work-schedule-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.work-time {
+  display: block;
+  color: #ffa5ba;
+}
+
+.contacts-details {
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.our-locations-btn,
+.franchise-btn {
+  width: 161px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-locations-btn {
+  color: #ffffff;
+  background-color: #d41342;
+}
+
+.our-locations-btn::after {
+  background-image: url(../img/white-arrow.png);
+  height: 10px;
+}
+
+.our-locations-btn:hover {
+  background-color: #c7133e;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-item {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacts-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .contacts-btn li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 547px;
+  }
+  .contacts-list {
+    width: 700px;
+    top: -84px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contacts-item {
+    width: 220px;
+    padding-top: 50px;
+    padding-right: 32px;
+    padding-bottom: 50px;
+    padding-left: 31px;
+  }
+  .contacts-list-cafe {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contacts-list-foodtruck {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .contacts-city {
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+  .contacts-desc {
+    margin-bottom: 30px;
+    line-height: 1.64;
+  }
+  .work-schedule {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .work-schedule-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .contacts-details {
+    line-height: 1.83;
+  }
+  .contacts-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts-btn li:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    padding-top: 556px;
+  }
+  .contacts-item {
+    width: 330px;
+    padding-top: 54px;
+    padding-right: 40px;
+    padding-bottom: 62px;
+    padding-left: 44px;
+  }
+  .contacts-list {
+    width: 1050px;
+    top: -102px;
+  }
+  .contacts-city {
+    margin-top: 32px;
+    margin-bottom: 10px;
+  }
+  .contacts-desc {
+    margin-bottom: 32px;
+    line-height: 1.81;
+  }
+  .work-schedule {
+    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .work-schedule-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .contacts-details {
+    line-height: 1.81;
   }
 }
 /*# sourceMappingURL=main.css.map */
