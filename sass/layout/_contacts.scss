@@ -1,7 +1,13 @@
 .contacts {
   position: relative;
   padding-top: 1291px;
+  padding-bottom: 43px;
   background-color: $section-bcg-color;
+
+  .title,
+  .subtitle {
+    text-align: start;
+  }
 }
 
 .contacts-list {
@@ -119,10 +125,59 @@
   }
 }
 
-// .franchise-btn {
-// }
+.social-icon-list {
+  @extend %list;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.social-icon-item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.social-icon-link {
+  @extend %link;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fea5bb;
+
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $main-text-color;
+  }
+}
+
+.tel-desc {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.02em;
+}
+
+.contact-tel {
+  @extend %link;
+
+  margin-left: 4px;
+  color: $main-text-color;
+}
 
 @media screen and(max-width:767px) {
+  .contacts .title {
+    margin-bottom: 43px;
+  }
+
   .contacts-item {
     width: 220px;
     margin-left: auto;
@@ -133,14 +188,23 @@
     }
   }
 
-  .contacts-btn li:not(:last-child) {
-    margin-bottom: 10px;
+  .contacts-btn {
+    margin-bottom: 113px;
+
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .contacts {
     padding-top: 547px;
+    padding-bottom: 91px;
+
+    .title {
+      margin-bottom: 0;
+    }
   }
 
   .contacts-list {
@@ -195,16 +259,41 @@
   .contacts-btn {
     display: flex;
     justify-content: center;
+    margin-bottom: 158px;
 
     li:not(:last-child) {
       margin-right: 15px;
     }
+  }
+
+  .contacts-address-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-icon-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .social-icon-link {
+    width: 34px;
+    height: 34px;
+  }
+
+  .tel-desc {
+    font-size: 14px;
+    line-height: 1.86;
   }
 }
 
 @media screen and(min-width:1200px) {
   .contacts {
     padding-top: 556px;
+    padding-bottom: 98px;
+
+    br {
+      display: none;
+    }
   }
 
   .contacts-item {
@@ -242,5 +331,21 @@
 
   .contacts-details {
     line-height: 1.81;
+  }
+
+  .contacts-btn {
+    margin-bottom: 165px;
+  }
+
+  .social-icon-list {
+    margin-bottom: 50px;
+  }
+
+  .social-icon-item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .tel-desc {
+    font-size: 16px;
   }
 }

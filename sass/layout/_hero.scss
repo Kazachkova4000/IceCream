@@ -42,7 +42,6 @@
 
   color: $main-text-color;
   background-color: $white-text-color;
-  transition: background-color 250ms linear;
 
   &:hover,
   &:focus {
@@ -56,12 +55,15 @@
 
   color: $white-text-color;
   background-color: $main-text-color;
-  transition: background-color 250ms linear;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
   }
+}
+
+.hero-arrow-link {
+  @extend %link;
 }
 
 @media screen and (max-width: 767px) {
@@ -89,21 +91,31 @@
     }
   }
 
-  .hero-subtitle {
+  .hero-desc {
     display: none;
   }
 }
 
 @media screen and(min-width:768px) {
+  .hero-desc {
+    margin-top: 66px;
+    margin-left: 120px;
+  }
+
   .hero-subtitle {
     display: block;
     width: 114px;
-    margin-top: 66px;
-    margin-left: 120px;
+    margin-bottom: 7px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
     color: $white-text-color;
+  }
+
+  .hero-arrow-link {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/hero/arrow-right-tab.png);
   }
 }
 
@@ -181,11 +193,21 @@
     }
   }
 
-  .hero-subtitle {
-    width: 200px;
+  .hero-desc {
     margin-top: 112px;
     margin-left: 180px;
+  }
+
+  .hero-subtitle {
+    width: 200px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.43;
+  }
+
+  .hero-arrow-link {
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/hero/arrow-right-desc.png);
   }
 }
